@@ -327,9 +327,9 @@ function ValidCaptcha(){
 }
 
 function validateId() {
-    if (IdInput.value.length > 11) {
+    if (IdInput.value.length > 11 || IdInput.value.length < 11) {
         check = false;
-        alert("خطأ في الرقم الوطني يجب ان يكون أقل او يساوي 11  خانة");
+        alert("خطأ في الرقم الوطني يجب ان يكون يساوي 11 خانة فقط");
     }
 }
 
